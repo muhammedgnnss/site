@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --siyah:#000;
+    --beyaz:#fff;
+    --seffaf: rgba(165, 151, 151, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "ikincialan"
+    "alt"
+    ;
+
+    grid-template-rows: 80px 100vh 500px 400px ;
+    gap: 5px;
+    
+
+}
+
+
+    header{
+        font-family: 'DM Sans', sans-serif;
+        display: flex;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        width: 100vw;
+        flex-wrap: wrap;
+        grid-area: header;
+        
+
+}
+
+header>.ara>:nth-child(2)
+{
+    width: 140px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+header > img{
+ width: 85px;
+ height: 85px;
+}
+header > .baslık{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+   
+}
+header > .baslık > a{
+    margin-left: 50px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+header > .baslık > a:hover{
+    color: rgb(255, 0, 0);
+}
+main
+{
+display: flex;
+background:no-repeat center/ cover url(toyotamavi.jpeg);
+flex-direction: column;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+grid-area: main;
+
+
+}
+main>h1
+{
+display: flex;
+margin-top: 220px;
+margin-left: 200px;
+font-size: 65px;
+color: white;
+}
+main>h2
+{
+display: flex;
+margin-left:200px;
+font-size:40px ;
+color: white;
+}
+main>h3
+{
+display: flex;
+width: 600px;
+margin-left: 200px;
+margin-top: 30px;
+font-size: 23px;
+color: white;
+}
+main>a
+{
+    color: white;
+    border: white 4px solid;
+    border-radius: 20px;
+    width: 140px;
+
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 190px;
+    margin-top: 35px;
+    padding: 5px;
+}
+main>a:hover
+{
+color: rgb(43, 92, 228);
+border: rgb(43, 92, 228)4px solid;
+
+}
+.ikincialan{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.ikincialan > div > img{
+    width: 400px;
+    
+}
+.ikincialan > div > h3{
+    width: 400px;
+
+}
+.ikincialan > div{
+    margin-top: 70px;
+    width: 400px;
+}
+.ikincialan > :nth-child(1){
+    margin-left: 600px;
+}
+.ikincialan > .resim1{
+   display: flex;
+   flex-direction: column;
+    height: 600px;
+    margin-left: -1050px;
+}
+.ikincialan > .resim2{
+    flex-direction: column;
+    display: flex;
+    height: 600px;
+    margin-top: 112px;
+    margin-left: -20px;
+}
+.ikincialan > .resim3{
+    flex-direction: column;
+    display: flex;
+    height: 600px;
+    margin-top: 115px;
+}
+.ikincialan >div > a
+{
+ margin-top: 8px;
+    width: 110px;
+    height: 25px;
+   background-color: black;
+   text-decoration: none;
+   color: white;
+}
+footer
+{
+    .alt{
+        display: flex;
+        padding: 50px;
+        margin-top: 50px;
+        justify-content: space-between;
+        font-family: 'Work Sans', sans-serif;
+        
+    }
+    .alt > div > a{
+        line-height: 1.8;
+        text-decoration: none;
+        color: black;
+        margin-top: 50px;
+        opacity: 0.8;
+    }
+    .alt > div > a:hover{
+        opacity: 1;
+    }
+
+}
+footer > .semboller{
+    display:flex;
+    flex-direction: column;
+    gap: 3px;
+    
+}
+footer > .semboller > a 
+{
+    width: 10px;
+    font-size: 30px;
+}
+footer>.semboller>a:hover
+{
+    font-size: 33px;
+}
